@@ -9,9 +9,8 @@ services:
     ports:
       - 3306:3306
       - 33060:33060
-    env_file: .env
-    volumes:
-      - ./data:/var/lib/mysql
+    env_file:
+      - .env
 
   adminer:
     image: adminer
